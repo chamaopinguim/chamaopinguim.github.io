@@ -8,6 +8,7 @@ body,
 
 p {
   margin: 0;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 * {
@@ -16,14 +17,31 @@ p {
 }
 
 .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+
   width: 100%;
   max-width: 834px;
   margin-right: 8px;
@@ -34,4 +52,12 @@ footer {
   margin-top: 8px;
   margin-bottom: 8px;
   text-align: center;
+}
+
+footer > a:link,
+footer > a:visited,
+footer > a:hover,
+footer > a:active {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
 }
